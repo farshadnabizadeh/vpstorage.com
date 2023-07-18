@@ -6,6 +6,7 @@ import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
 import Home from '@/assets/svg/home.svg'
+import Server from '@/assets/svg/server.svg'
 const index = () => {
     const [component, setComponent] = useState<any>('Home')
     let LanguageSelection = {
@@ -17,8 +18,8 @@ const index = () => {
             <div className='container h-full flex justify-between'>
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between px-28'>
-                        <li onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}><Image width={30} height={30} src={Home} alt='Home'/></li>
-                        <li onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Services</li>
+                        <li onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Home} alt='Home'/></li>
+                        <li onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={25} height={25} src={Server} alt='Services'/></li>
                         <li onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Pricing</li>
                     </ul>
                 </div>
