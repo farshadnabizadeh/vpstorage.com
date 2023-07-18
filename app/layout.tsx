@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import TopBar from './Components/TopBar'
 import Header from './Components/Header'
-
+import Footer from './Components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -26,7 +26,9 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <div></div>
+        <div className='w-full'>
+          <Footer />
+        </div>
       </body>
     </html>
   )
