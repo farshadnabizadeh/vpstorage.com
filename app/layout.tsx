@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import TopBar from './Components/TopBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} w-full min-h-screen`}>
-        <div></div>
+        <div className='w-full'>
+          <TopBar/>
+        </div>
         <main>
           {children}
         </main>
