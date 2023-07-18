@@ -1,10 +1,15 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Gear from '@/assets/svg/gear.svg';
+import Gear from '@/assets/svg/gear.svg'
 import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
+import Home from '@/assets/svg/home.svg'
+import Server from '@/assets/svg/server.svg'
+import Price from '@/assets/svg/price.svg'
+import Blog from '@/assets/svg/blog.svg'
+import Contactus from '@/assets/svg/contactus.svg'
 const index = () => {
     const [component, setComponent] = useState<any>('Home')
     let LanguageSelection = {
@@ -16,9 +21,9 @@ const index = () => {
             <div className='container h-full flex justify-between'>
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between px-28'>
-                        <li onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Home</li>
-                        <li onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Services</li>
-                        <li onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Pricing</li>
+                        <li onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Home} alt='Home'/></li>
+                        <li onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={25} height={25} src={Server} alt='Services'/></li>
+                        <li onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}><Image width={41} height={41} src={Price} alt='Pricing'/></li>
                     </ul>
                 </div>
                 <div className='w-[20%] flex justify-center items-center'>
@@ -28,8 +33,8 @@ const index = () => {
                 </div>
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between items-center px-28'>
-                        <li onClick={() => setComponent('Blog')} className={`${component == 'Blog' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Blog</li>
-                        <li onClick={() => setComponent('Contact Us')} className={`${component == 'Contact Us' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em]`}>Contact Us</li>
+                        <li onClick={() => setComponent('Blog')} className={`${component == 'Blog' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={30} height={30} src={Blog} alt='Blog'/></li>
+                        <li onClick={() => setComponent('Contact Us')} className={`${component == 'Contact Us' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Contactus} alt='Contactus'/></li>
                         <li className='cursor-pointer text-lg font-normal tracking-[0.02em]'>
                             <div className='w-full h-full flex justify-center items-center'>
                                 <div className='relative w-10 h-10 rounded-full border-[1px] border-[red]'>
