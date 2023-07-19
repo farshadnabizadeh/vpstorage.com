@@ -1,12 +1,9 @@
-'use client'
 import './globals.css'
 import type { Metadata } from 'next'
-import { useEffect, useState, useRef } from 'react'
 import { Inter } from 'next/font/google'
 import TopBar from './Components/TopBar'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import { data } from 'autoprefixer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
