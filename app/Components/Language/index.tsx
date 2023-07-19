@@ -1,5 +1,5 @@
 'use client'
-import React, { FC } from 'react'
+import React, { FC, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
@@ -9,7 +9,24 @@ interface languagePopupStatusProps {
 }
 const index: FC<languagePopupStatusProps> = (props) => {
     const { languagePopupStatus } = props
-
+    const wrapperRef = useRef<any>(null);
+    useEffect(() => {
+        /**
+         * Alert if clicked on outside of element
+         */
+        function handleClickOutside(event: any) {
+            if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+                // setlanguagePopupStatus(false);
+                console.log(event.target)
+            }
+        }
+        // Bind the event listener
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            // Unbind the event listener on clean up
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [wrapperRef]);
     const Languages = [
         {
             "Name": "United States",
@@ -32,7 +49,7 @@ const index: FC<languagePopupStatusProps> = (props) => {
                         <div className='relative container h-full'>
                             <div className='absolute h-full top-0 right-0 w-[40%]'>
                                 <div className='h-full absolute top-0 right-0 w-[50%]'>
-                                    <div className='w-full translate-y-[120px] translate-x-[-10px]'>
+                                    <div ref={wrapperRef} className='w-full translate-y-[120px] translate-x-[-10px]'>
                                         <ul className='w-full bg-[#212F3C] rounded-lg'>
                                             {
                                                 Languages.map((item, index) => (

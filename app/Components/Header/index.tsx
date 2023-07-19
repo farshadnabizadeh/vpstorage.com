@@ -18,32 +18,10 @@ interface setLangProps {
 const index: FC<setLangProps> = (props) => {
     const [languagePopupStatus, setlanguagePopupStatus] = useState<boolean>(false)
     const [component, setComponent] = useState<any>('Home')
-    const wrapperRef = useRef<HTMLLIElement>(null);
-
     let LanguageSelection = {
         component: US,
         title: 'United States'
     }
-
-
-    useEffect(() => {
-        /**
-         * Alert if clicked on outside of element
-         */
-        function handleClickOutside(event: any) {
-            if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-                setlanguagePopupStatus(false);
-                // console.log(event.target)
-            }
-        }
-        // Bind the event listener
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [wrapperRef]);
-
     return (
         <>
             <section className='absolute z-40 w-full h-16 flex justify-center bg-[#ECF0F1] text-black'>
@@ -64,7 +42,7 @@ const index: FC<setLangProps> = (props) => {
                         <ul className='w-full flex justify-between items-center px-28'>
                             <li title='Blog' onClick={() => setComponent('Blog')} className={`${component == 'Blog' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={30} height={30} src={Blog} alt='Blog' /></li>
                             <li title='Contact Us' onClick={() => setComponent('Contact Us')} className={`${component == 'Contact Us' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Contactus} alt='Contactus' /></li>
-                            <li ref={wrapperRef} onClick={() => setlanguagePopupStatus(!languagePopupStatus)} className='cursor-pointer text-lg font-normal tracking-[0.02em]'>
+                            <li onClick={() => setlanguagePopupStatus(!languagePopupStatus)} className='cursor-pointer text-lg font-normal tracking-[0.02em]'>
                                 <div className='w-full h-full flex justify-center items-center'>
                                     <div className='relative w-10 h-10 rounded-full border-[1px] border-[red]'>
                                         <Image fill src={LanguageSelection.component} alt={LanguageSelection.title} />
