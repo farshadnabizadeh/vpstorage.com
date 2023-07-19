@@ -24,27 +24,8 @@ export default function RootLayout({
   const setLang = (data: boolean) => {
     setlanguagePopupStatus(!languagePopupStatus)
   }
-  function useOutsideAlerter(ref: any) {
-    useEffect(() => {
-      /**
-       * Alert if clicked on outside of element
-       */
-      function handleClickOutside(event: any) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          // setlanguagePopupStatus(false);
-          console.log(event.target)
-        }
-      }
-      // Bind the event listener
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        // Unbind the event listener on clean up
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [ref]);
-  }
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
+ 
+
   return (
     <html lang="en">
       <body className={`${inter.className} w-full min-h-screen font-Poppins`}>
@@ -53,7 +34,7 @@ export default function RootLayout({
           <Header setLang={setLang} />
           <Language languagePopupStatus={languagePopupStatus} />
         </div>
-        <main ref={wrapperRef}>
+        <main>
           {children}
         </main>
         <div className='w-full'>
