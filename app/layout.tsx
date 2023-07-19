@@ -6,7 +6,6 @@ import { Inter } from 'next/font/google'
 import TopBar from './Components/TopBar'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import Language from './Components/Language'
 import { data } from 'autoprefixer'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,19 +19,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [languagePopupStatus, setlanguagePopupStatus] = useState<boolean>(false)
-  const setLang = (data: boolean) => {
-    setlanguagePopupStatus(!languagePopupStatus)
-  }
- 
-
   return (
     <html lang="en">
       <body className={`${inter.className} w-full min-h-screen font-Poppins`}>
         <div className='w-full sticky top-0 z-10'>
           <TopBar />
-          <Header setLang={setLang} />
-          <Language languagePopupStatus={languagePopupStatus} />
+          <Header />
         </div>
         <main>
           {children}
