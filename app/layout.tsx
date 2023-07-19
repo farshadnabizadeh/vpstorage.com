@@ -1,9 +1,13 @@
+'use client'
 import './globals.css'
 import type { Metadata } from 'next'
+import { useState } from 'react'
 import { Inter } from 'next/font/google'
 import TopBar from './Components/TopBar'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import Language from './Components/Language'
+import { data } from 'autoprefixer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,12 +20,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [languagePopupStatus, setlanguagePopupStatus] = useState<boolean>(false)
   return (
     <html lang="en">
       <body className={`${inter.className} w-full min-h-screen font-Poppins`}>
         <div className='w-full sticky top-0 z-10'>
           <TopBar />
           <Header />
+          <Language languagePopupStatus={languagePopupStatus} />
         </div>
         <main>
           {children}
