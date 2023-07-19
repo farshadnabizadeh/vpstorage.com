@@ -18,6 +18,9 @@ interface setLangProps {
 const index: FC<setLangProps> = (props) => {
     const [languagePopupStatus, setlanguagePopupStatus] = useState<boolean>(false)
     const [component, setComponent] = useState<any>('Home')
+    const clicking = (data: any) => {
+        setlanguagePopupStatus(data)
+    }
     let LanguageSelection = {
         component: US,
         title: 'United States'
@@ -53,7 +56,7 @@ const index: FC<setLangProps> = (props) => {
                     </div>
                 </div>
             </section>
-            <Language languagePopupStatus={languagePopupStatus} />
+            <Language languagePopupStatus={languagePopupStatus} clicking={clicking} />
         </>
     )
 }

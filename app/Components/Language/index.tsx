@@ -6,6 +6,7 @@ import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
 interface languagePopupStatusProps {
     languagePopupStatus?: boolean,
+    clicking?: any,
 }
 const index: FC<languagePopupStatusProps> = (props) => {
     const { languagePopupStatus } = props
@@ -16,6 +17,7 @@ const index: FC<languagePopupStatusProps> = (props) => {
          */
         function handleClickOutside(event: any) {
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+                props.clicking(false)
                 // setlanguagePopupStatus(false);
                 console.log(event.target)
             }
