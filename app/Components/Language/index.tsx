@@ -7,10 +7,14 @@ import RU from '@/assets/flags/RU.png'
 interface languagePopupStatusProps {
     languagePopupStatus?: boolean,
     clicking?: any,
+    addLanguage?:any,
 }
 const index: FC<languagePopupStatusProps> = (props) => {
     const { languagePopupStatus } = props
     const wrapperRef = useRef<any>(null);
+    const addLanguage = (data:any) => {
+        props.addLanguage(data)
+    }
     useEffect(() => {
         /**
          * Alert if clicked on outside of element
@@ -55,7 +59,7 @@ const index: FC<languagePopupStatusProps> = (props) => {
                                         <ul className='w-full bg-[#212F3C] rounded-lg'>
                                             {
                                                 Languages.map((item, index) => (
-                                                    <li key={index} className='w-full h-[50px] rounded-lg py-5 flex border-b-[1px] border-[#ffffff] text-white cursor-pointer hover:bg-slate-700'>
+                                                    <li onClick={()=>addLanguage(item)} key={index} className='w-full h-[50px] rounded-lg py-5 flex border-b-[1px] border-[#ffffff] text-white cursor-pointer hover:bg-slate-700'>
                                                         <div className='w-[30%] h-full flex justify-center items-center'>
                                                             <div className='relative w-[30px] h-[30px]'>
                                                                 <Image fill src={item.Flag} alt={item.Name} />
