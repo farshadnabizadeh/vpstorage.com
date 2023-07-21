@@ -1,9 +1,12 @@
+'use client'
 import React, { FC } from 'react'
 import Image from 'next/image'
 import WhatsApp from '@/assets/svg/whapp.svg'
 import Email from '@/assets/svg/email.svg'
 import Logo from '@/assets/jpg/Logo.png'
+import useWindowDimensions from '@/Hooks/useWindowDimensions'
 const index: FC = () => {
+    const { height, width } = useWindowDimensions();
     return (
         <section className='w-full h-[50px] flex justify-center bg-[#212F3C]'>
             <div className='container h-full flex justify-between items-center px-28'>
