@@ -6,7 +6,7 @@ import Slider from './Components/Slider'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-white">
-      <section className='w-full flex justify-center'>
+      {/* <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
           <div className='w-full flex justify-center'>
             <Slider />
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }

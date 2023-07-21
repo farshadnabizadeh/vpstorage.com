@@ -10,7 +10,7 @@ import Telegram from '@/assets/svg/Telegram.svg'
 
 const index: FC = () => {
     return (
-        <div className={`w-full flex justify-center bg-[#212F3C]`}>
+        <div className={`w-full flex justify-center bg-[#212F3C] hidden`}>
             <div className='container h-full relative'>
                 <div className='w-full flex justify-center'>
                     <Image src={Logo} alt='Logo' />

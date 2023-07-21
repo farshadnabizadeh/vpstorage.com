@@ -43,8 +43,42 @@ body {
   }
 }
 
+@keyframes openSidebar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes closeSidebar {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
 #LogoContainer {
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 3s linear infinite;
+}
+
+.ratate {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 7s linear infinite;
+}
+
+.openingSidebar {
+  animation: openSidebar 1s linear;
+}
+
+.closingSidebar {
+  animation: closeSidebar 1s linear;
 }
