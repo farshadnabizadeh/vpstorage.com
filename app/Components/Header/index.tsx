@@ -32,18 +32,21 @@ const index: FC<setLangProps> = (props) => {
                     component: US,
                     title: 'United States'
                 })
+                setlanguagePopupStatus(false)
                 break
             case 'Iran':
                 setLanguageSelection({
                     component: IR,
                     title: 'Iran'
                 })
+                setlanguagePopupStatus(false)
                 break
             case 'Russia':
                 setLanguageSelection({
                     component: RU,
                     title: 'Russia'
                 })
+                setlanguagePopupStatus(false)
                 break
             default:
                 LanguageSelection.component = US,
