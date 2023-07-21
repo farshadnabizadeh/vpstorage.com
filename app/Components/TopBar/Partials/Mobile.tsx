@@ -95,6 +95,11 @@ const Mobile: FC = () => {
                         </div>
                     </section> : null
             }
+            <section className='w-full h-[250px] bg-white flex justify-center'>
+                <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
+
+                </div>
+            </section>
         </div>
     )
 }
