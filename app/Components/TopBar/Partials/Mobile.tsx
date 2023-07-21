@@ -3,17 +3,27 @@ import Image from 'next/image'
 import Logo from '@/assets/jpg/Logo.png'
 import Menu from '@/assets/svg/humberger.svg'
 import Close from '@/assets/svg/close.svg'
+import Home from '@/assets/svg/home.svg'
+import Server from '@/assets/svg/server.svg'
+import Price from '@/assets/svg/price.svg'
+import Blog from '@/assets/svg/blog.svg'
+import Contactus from '@/assets/svg/contactus.svg'
 const Mobile: FC = () => {
     const [open, setOpen] = useState<any>(false)
     const [animationStatus, setAnimationStatus] = useState<any>()
     const [hiddenMenu, setHiddenMenu] = useState<any>(true)
+    const [list, setList] = useState<any>(true)
     const openfunction = () => {
         setHiddenMenu(false)
         setAnimationStatus('openingSidebar')
         setOpen(true)
+        setTimeout(() => {
+            setList(false)
+        }, 900)
     }
     const closefunction = () => {
         setAnimationStatus('closingSidebar')
+        setList(true)
         setTimeout(() => {
             setOpen(false)
             setHiddenMenu(true)
@@ -40,6 +50,40 @@ const Mobile: FC = () => {
                             <div onClick={closefunction} className='relative m-2 w-9 h-9'>
                                 <Image className='p-2' fill src={Close} alt='Menu' />
                             </div>
+                        </div>
+                        <div className='w-full'>
+                            <ul className={`w-full ${list ? 'hidden' : 'block'}`}>
+                                <li className='w-full flex  items-center py-4 border-b-2 border-t-2 border-[#ffffff]'>
+                                    <div className='mx-4 w-10 h-10 rounded-full bg-white flex justify-center items-center'>
+                                        <Image src={Home} width={30} height={30} alt='Home' />
+                                    </div>
+                                    <div>Home</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='flex justify-center items-center mx-4 w-10 h-10 rounded-full bg-white'>
+                                        <Image src={Server} width={30} height={30} alt='Server' />
+                                    </div>
+                                    <div>Services</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='flex justify-center items-center mx-4 w-10 h-10 rounded-full bg-white'>
+                                        <Image src={Price} width={30} height={30} alt='Price' />
+                                    </div>
+                                    <div>Price</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='flex justify-center items-center mx-4 w-10 h-10 rounded-full bg-white'>
+                                        <Image src={Blog} width={30} height={30} alt='Blog' />
+                                    </div>
+                                    <div className=''>Blog</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='flex justify-center items-center mx-4 w-10 h-10 rounded-full bg-white'>
+                                        <Image src={Contactus} width={30} height={30} alt='Contactus' />
+                                    </div>
+                                    <div className=''>Contact Us</div>
+                                </li>
+                            </ul>
                         </div>
                     </section> : null
             }
