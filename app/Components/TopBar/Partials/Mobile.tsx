@@ -112,7 +112,26 @@ const Mobile: FC = () => {
                 LanguageStatus ?
                     <section className={`${LanguageBarOpening} w-full h-[250px] bg-white flex justify-center`}>
                         <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
-
+                            <ul className='w-full h-full translate-y-16'>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
+                                        <Image fill src={US} alt='United States' />
+                                    </div>
+                                    <div className='w-full h-full'>United States</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
+                                        <Image fill src={IR} alt='Iran' />
+                                    </div>
+                                    <div className='w-full h-full'>Iran</div>
+                                </li>
+                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
+                                        <Image fill src={RU} alt='Russia' />
+                                    </div>
+                                    <div className='w-full h-full'>Russia</div>
+                                </li>
+                            </ul>
                         </div>
                     </section> : null
             }
