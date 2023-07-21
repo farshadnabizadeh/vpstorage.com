@@ -8,6 +8,9 @@ import Server from '@/assets/svg/server.svg'
 import Price from '@/assets/svg/price.svg'
 import Blog from '@/assets/svg/blog.svg'
 import Contactus from '@/assets/svg/contactus.svg'
+import US from '@/assets/flags/US.png'
+import IR from '@/assets/flags/IR.png'
+import RU from '@/assets/flags/RU.png'
 const Mobile: FC = () => {
     const [open, setOpen] = useState<any>(false)
     const [animationStatus, setAnimationStatus] = useState<any>()
@@ -37,6 +40,11 @@ const Mobile: FC = () => {
                         {hiddenMenu ? <div onClick={openfunction} className='ratate relative m-2 w-9 h-9 rounded-full border-[1px] border-[#ffffff]'>
                             <Image className='p-2' fill src={Menu} alt='Menu' />
                         </div> : null}
+                    </div>
+                    <div className='h-full flex justify-center items-center'>
+                        <div className='w-9 h-9 rounded-full bg-white flex justify-center items-center'>
+                            <Image src={US} width={30} height={30} alt='Language' />
+                        </div>
                     </div>
                     <div className='w-[50%] h-full flex justify-end items-center px-5'>
                         <Image width={50} height={50} src={Logo} alt='Logo' />
