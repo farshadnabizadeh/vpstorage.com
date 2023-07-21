@@ -63,6 +63,26 @@ body {
   }
 }
 
+@keyframes LanguageBar {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 250px;
+  }
+}
+
+@keyframes CloseLanguageBar {
+  from {
+    height: 250px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
 #LogoContainer {
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
@@ -81,4 +101,12 @@ body {
 
 .closingSidebar {
   animation: closeSidebar 1s linear;
+}
+
+.LanguageAnimation {
+  animation: LanguageBar 1s linear;
+}
+
+.CloseLanguageBarAnnimation {
+  animation: CloseLanguageBar 1.5s linear;
 }

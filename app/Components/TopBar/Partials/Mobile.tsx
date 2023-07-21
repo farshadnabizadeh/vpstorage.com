@@ -16,6 +16,8 @@ const Mobile: FC = () => {
     const [animationStatus, setAnimationStatus] = useState<any>()
     const [hiddenMenu, setHiddenMenu] = useState<any>(true)
     const [list, setList] = useState<any>(true)
+    const [LanguageBarOpening, setLanguageBarOpening] = useState<any>('hidden');
+    const [LanguageStatus, setLanguageStatus] = useState<any>(false)
     const openfunction = () => {
         setHiddenMenu(false)
         setAnimationStatus('openingSidebar')
@@ -32,6 +34,17 @@ const Mobile: FC = () => {
             setHiddenMenu(true)
         }, 1000)
     }
+    const openLanguageBar = () => {
+        if (LanguageStatus) {
+            setLanguageBarOpening('CloseLanguageBarAnnimation')
+            setTimeout(() => {
+                setLanguageStatus(false)
+            }, 1000)
+        } else {
+            setLanguageStatus(true)
+            setLanguageBarOpening('LanguageAnimation')
+        }
+    }
     return (
         <div className='w-full relative'>
             <section className='w-full absolute z-0 h-[50px] bg-[#212F3C]'>
@@ -42,7 +55,7 @@ const Mobile: FC = () => {
                         </div> : null}
                     </div>
                     <div className='h-full flex justify-center items-center'>
-                        <div className='w-9 h-9 rounded-full bg-white flex justify-center items-center'>
+                        <div onClick={openLanguageBar} className='w-9 h-9 rounded-full bg-white flex justify-center items-center'>
                             <Image src={US} width={30} height={30} alt='Language' />
                         </div>
                     </div>
@@ -95,11 +108,14 @@ const Mobile: FC = () => {
                         </div>
                     </section> : null
             }
-            <section className='w-full h-[250px] bg-white flex justify-center'>
-                <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
+            {
+                LanguageStatus ?
+                    <section className={`${LanguageBarOpening} w-full h-[250px] bg-white flex justify-center`}>
+                        <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
 
-                </div>
-            </section>
+                        </div>
+                    </section> : null
+            }
         </div>
     )
 }
