@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import Logo from '@/assets/jpg/Logo.png'
 import Menu from '@/assets/svg/humberger.svg'
@@ -12,6 +12,7 @@ import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
 const Mobile: FC = () => {
+    const wrapperRef = useRef<any>(null);
     const [open, setOpen] = useState<any>(false)
     const [animationStatus, setAnimationStatus] = useState<any>()
     const [hiddenMenu, setHiddenMenu] = useState<any>(true)
@@ -96,6 +97,28 @@ const Mobile: FC = () => {
                 break
         }
     }
+    useEffect(() => {
+        /**
+         * Alert if clicked on outside of element
+         */
+        function handleClickOutside(event: any) {
+            if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+                setHidden(true)
+                setLanguageBarOpening('CloseLanguageBarAnnimation')
+                setTimeout(() => {
+                    setLanguageStatus(false)
+                }, 1000)
+                // setlanguagePopupStatus(false);
+                console.log(event.target)
+            }
+        }
+        // Bind the event listener
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            // Unbind the event listener on clean up
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [wrapperRef]);
     return (
         <div className='w-full relative'>
             <section className='w-full absolute z-0 h-[50px] bg-[#212F3C]'>
@@ -163,7 +186,7 @@ const Mobile: FC = () => {
                 LanguageStatus ?
                     <section className={`${LanguageBarOpening} w-full h-[250px] bg-white flex justify-center`}>
                         <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
-                            <ul className={`w-full h-full translate-y-16 ${hidden ? 'hidden' : 'block'}`}>
+                            <ul ref={wrapperRef} className={`w-full h-full translate-y-16 ${hidden ? 'hidden' : 'block'}`}>
                                 {
                                     Lang.map((item, index) => (
                                         <li key={index} onClick={() => addLanguageBar(item)} className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
