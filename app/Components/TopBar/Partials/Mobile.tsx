@@ -19,6 +19,24 @@ const Mobile: FC = () => {
     const [LanguageBarOpening, setLanguageBarOpening] = useState<any>('hidden');
     const [LanguageStatus, setLanguageStatus] = useState<any>(false)
     const [hidden, setHidden] = useState<any>(true)
+    const [language, setLang] = useState<any>({
+        "type": US,
+        "title": "United States"
+    })
+    const Lang = [
+        {
+            "Name": "United States",
+            "Flag": US
+        },
+        {
+            "Name": "Iran",
+            "Flag": IR
+        },
+        {
+            "Name": "Russia",
+            "Flag": RU,
+        },
+    ]
     const openfunction = () => {
         setHiddenMenu(false)
         setAnimationStatus('openingSidebar')
@@ -50,6 +68,34 @@ const Mobile: FC = () => {
             setLanguageBarOpening('LanguageAnimation')
         }
     }
+    const addLanguageBar = (data: any) => {
+        switch (data.Name) {
+            case 'United States':
+                setLang({
+                    "type": US,
+                    "title": 'United States'
+                })
+                break
+            case 'Iran':
+                setLang({
+                    "type": IR,
+                    "title": 'Iran'
+                })
+                break
+            case 'Russia':
+                setLang({
+                    "type": RU,
+                    "title": 'Russia'
+                })
+                break
+            default:
+                setLang({
+                    "type": US,
+                    "title": 'United States'
+                })
+                break
+        }
+    }
     return (
         <div className='w-full relative'>
             <section className='w-full absolute z-0 h-[50px] bg-[#212F3C]'>
@@ -61,7 +107,7 @@ const Mobile: FC = () => {
                     </div>
                     <div className='h-full flex justify-center items-center'>
                         <div onClick={openLanguageBar} className='w-9 h-9 rounded-full bg-white flex justify-center items-center'>
-                            <Image src={US} width={30} height={30} alt='Language' />
+                            <Image src={language.type} width={30} height={30} alt={language.title} />
                         </div>
                     </div>
                     <div className='w-[50%] h-full flex justify-end items-center px-5'>
@@ -118,24 +164,16 @@ const Mobile: FC = () => {
                     <section className={`${LanguageBarOpening} w-full h-[250px] bg-white flex justify-center`}>
                         <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
                             <ul className={`w-full h-full translate-y-16 ${hidden ? 'hidden' : 'block'}`}>
-                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
-                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
-                                        <Image fill src={US} alt='United States' />
-                                    </div>
-                                    <div className='w-full h-full'>United States</div>
-                                </li>
-                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
-                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
-                                        <Image fill src={IR} alt='Iran' />
-                                    </div>
-                                    <div className='w-full h-full'>Iran</div>
-                                </li>
-                                <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
-                                    <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
-                                        <Image fill src={RU} alt='Russia' />
-                                    </div>
-                                    <div className='w-full h-full'>Russia</div>
-                                </li>
+                                {
+                                    Lang.map((item, index) => (
+                                        <li key={index} onClick={() => addLanguageBar(item)} className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
+                                            <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
+                                                <Image fill src={item.Flag} alt={item.Name} />
+                                            </div>
+                                            <div className='w-full h-full'>{item.Name}</div>
+                                        </li>
+                                    ))
+                                }
                             </ul>
                         </div>
                     </section> : null
