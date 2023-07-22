@@ -58,7 +58,7 @@ const Desktop = () => {
                     LanguageSelection.title = data.Name
                 break
         }
-        
+
     }
     return (<>
         <section className='absolute z-40 w-full h-16 flex justify-center bg-[#ECF0F1] text-black'>
