@@ -18,6 +18,7 @@ const Mobile: FC = () => {
     const [list, setList] = useState<any>(true)
     const [LanguageBarOpening, setLanguageBarOpening] = useState<any>('hidden');
     const [LanguageStatus, setLanguageStatus] = useState<any>(false)
+    const [hidden, setHidden] = useState<any>(true)
     const openfunction = () => {
         setHiddenMenu(false)
         setAnimationStatus('openingSidebar')
@@ -36,11 +37,15 @@ const Mobile: FC = () => {
     }
     const openLanguageBar = () => {
         if (LanguageStatus) {
+            setHidden(true)
             setLanguageBarOpening('CloseLanguageBarAnnimation')
             setTimeout(() => {
                 setLanguageStatus(false)
             }, 1000)
         } else {
+            setTimeout(() => {
+                setHidden(false)
+            }, 1000)
             setLanguageStatus(true)
             setLanguageBarOpening('LanguageAnimation')
         }
@@ -112,7 +117,7 @@ const Mobile: FC = () => {
                 LanguageStatus ?
                     <section className={`${LanguageBarOpening} w-full h-[250px] bg-white flex justify-center`}>
                         <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
-                            <ul className='w-full h-full translate-y-16'>
+                            <ul className={`w-full h-full translate-y-16 ${hidden ? 'hidden' : 'block'}`}>
                                 <li className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
                                     <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
                                         <Image fill src={US} alt='United States' />
