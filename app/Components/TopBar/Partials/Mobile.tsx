@@ -76,24 +76,28 @@ const Mobile: FC = () => {
                     "type": US,
                     "title": 'United States'
                 })
+                openLanguageBar()
                 break
             case 'Iran':
                 setLang({
                     "type": IR,
                     "title": 'Iran'
                 })
+                openLanguageBar()
                 break
             case 'Russia':
                 setLang({
                     "type": RU,
                     "title": 'Russia'
                 })
+                openLanguageBar()
                 break
             default:
                 setLang({
                     "type": US,
                     "title": 'United States'
                 })
+                openLanguageBar()
                 break
         }
     }
