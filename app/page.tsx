@@ -1,12 +1,15 @@
+'use client'
 import Image from 'next/image'
 import vpnimage from '@/assets/jpg/vpnimage.jpg'
 import vpnimage2 from '@/assets/jpg/vpnimage2.jpg'
 import Slider from './Components/Slider'
+import useWindowDimensions from '@/Hooks/useWindowDimensions'
+import { useEffect, useState } from 'react'
 
-export default function Home() {
+const Desktop = () => {
   return (
-    <main className="flex min-h-screen flex-col bg-white">
-      {/* <section className='w-full flex justify-center'>
+    <>
+      <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
           <div className='w-full flex justify-center'>
             <Slider />
@@ -64,7 +67,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+    </>
+  )
+}
+export default function Home() {
+  const { height, width } = useWindowDimensions();
+  const [template, setTemplate] = useState<any>();
+  useEffect(() => {
+    console.log(width)
+    if (width <= 375) { setTemplate(null) }
+    if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
+    if (width > 1024) { setTemplate(<Desktop />) }
+  }, [width])
+  return (
+    <main className="flex min-h-screen flex-col bg-white">
+      {template}
     </main>
   )
 }
