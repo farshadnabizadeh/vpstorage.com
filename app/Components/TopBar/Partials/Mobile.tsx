@@ -8,6 +8,7 @@ import Server from '@/assets/svg/server.svg'
 import Price from '@/assets/svg/price.svg'
 import Blog from '@/assets/svg/blog.svg'
 import Contactus from '@/assets/svg/contactus.svg'
+import { Lang } from '@/data/Language'
 import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
@@ -24,20 +25,6 @@ const Mobile: FC = () => {
         "type": US,
         "title": "United States"
     })
-    const Lang = [
-        {
-            "Name": "United States",
-            "Flag": US
-        },
-        {
-            "Name": "Iran",
-            "Flag": IR
-        },
-        {
-            "Name": "Russia",
-            "Flag": RU,
-        },
-    ]
     const openfunction = () => {
         setHiddenMenu(false)
         setAnimationStatus('openingSidebar')
