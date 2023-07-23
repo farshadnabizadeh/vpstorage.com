@@ -177,7 +177,7 @@ const Mobile: FC = () => {
                 LanguageStatus ?
                     <section className={`${LanguageBarOpening} absolute top-12 w-full bg-transparent flex justify-center`}>
                         <div className='w-[80%] h-full bg-[#212F3C] rounded-b-lg'>
-                            <ul ref={wrapperRef} className={`w-full h-full ${hidden ? 'hidden' : 'block'}`}>
+                            <ul ref={wrapperRef} className={`w-full text-white h-full ${hidden ? 'hidden' : 'block'}`}>
                                 {
                                     Lang.map((item, index) => (
                                         <li key={index} onClick={() => addLanguageBar(item)} className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
