@@ -18,7 +18,7 @@ const Mobile = (props:any) => {
           <div className='w-full flex text-black flex-col'>
             <div className='w-full'>
               <div className='w-full'>
-                <h1 className='text-xl font-Kanit font-bold text-center'>Why Do I Need to Use a VPN ?</h1>
+                <h1 className='text-lg font-Kanit font-bold text-center'>Why Do I Need to Use a VPN ?</h1>
               </div>
               <div className='py-5 px-5 w-full mb-5'>
                 <p className='text-sm font-normal w-full text-justify'>
@@ -43,10 +43,10 @@ const Mobile = (props:any) => {
           <div className='w-full'>
             <div className='w-full float-right'>
               <div className='w-full'>
-                <h1 className='text-xl mt-10 mb-5 font-Kanit font-bold text-center'>How Can VPN Protected us in Internet ?</h1>
+                <h1 className='text-lg mt-5 mb-5 font-Kanit font-bold text-center text-black'>How Can VPN Protected us in Internet ?</h1>
               </div>
               <div className='px-5 h-full bg-white'>
-                <p className='text-sm font-normal w-full text-justify text-black pb-14'>
+                <p className='text-sm font-normal w-full text-justify text-black pb-32'>
                   A VPN (Virtual Private Network) protects us on the internet by encrypting our internet traffic, ensuring that our online activities and data remain confidential and safe from potential threats like hackers and surveillance.
 
                   When using public Wi-Fi networks, a VPN acts as a shield, preventing malicious entities from intercepting our sensitive information, reducing the risk of data breaches.
