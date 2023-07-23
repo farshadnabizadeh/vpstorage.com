@@ -138,7 +138,7 @@ const Mobile: FC = () => {
                             </div>
                         </div>
                         <div className='w-full'>
-                            <ul className={`w-full ${list ? 'hidden' : 'block'}`}>
+                            <ul className={`w-full text-white ${list ? 'hidden' : 'block'}`}>
                                 <li className='w-full flex  items-center py-4 border-b-2 border-t-2 border-[#ffffff]'>
                                     <div className='mx-4 w-10 h-10 rounded-full bg-white flex justify-center items-center'>
                                         <Image src={Home} width={30} height={30} alt='Home' />
