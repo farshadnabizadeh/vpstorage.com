@@ -7,14 +7,14 @@ import useWindowDimensions from '@/Hooks/useWindowDimensions'
 import { useEffect, useState } from 'react'
 
 
-const Mobile = () => {
+const Mobile = (props:any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
-          {/* <div className='w-full flex justify-center'>
-            <Slider />
-          </div> */}
+          <div className='w-full flex justify-center'>
+            <Slider width={props.width}/>
+          </div>
           <div className='w-full flex text-black flex-col'>
             <div className='w-full'>
               <div className='w-full'>
@@ -141,7 +141,7 @@ export default function Home() {
   const [template, setTemplate] = useState<any>();
   useEffect(() => {
     console.log(width)
-    if (width <= 375) { setTemplate(<Mobile />) }
+    if (width <= 375) { setTemplate(<Mobile width={width} />) }
     if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
     if (width > 1024) { setTemplate(<Desktop />) }
   }, [width])
