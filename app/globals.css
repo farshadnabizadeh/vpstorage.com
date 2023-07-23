@@ -69,13 +69,13 @@ body {
   }
 
   to {
-    height: 250px;
+    height: 190px;
   }
 }
 
 @keyframes CloseLanguageBar {
   from {
-    height: 250px;
+    height: 190px;
   }
 
   to {
