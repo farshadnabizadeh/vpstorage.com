@@ -141,9 +141,9 @@ export default function Home() {
   const [template, setTemplate] = useState<any>();
   useEffect(() => {
     console.log(width)
-    if (width <= 375) { setTemplate(<Mobile width={width} />) }
-    if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
-    if (width > 1024) { setTemplate(<Desktop />) }
+    if (width <= 400) { setTemplate(<Mobile width={width} />) }
+    // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
+    // if (width > 1024) { setTemplate(<Desktop />) }
   }, [width])
   return (
     <main className="flex min-h-screen flex-col bg-white">
