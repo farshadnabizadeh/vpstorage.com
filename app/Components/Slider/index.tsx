@@ -37,8 +37,10 @@ const Mobile = () => {
         <>
             <section className='relative w-[93%] h-[250px] rounded-3xl mt-3 mb-10'>
                 <Image className='rounded-2xl' fill src={Home} alt='HomepageHero' />
-                <div className='absolute top-0 left-0 w-[50%] h-full'>
-
+                <div className='absolute top-0 left-0 w-full flex justify-center'>
+                    <div className='w-[90%] mt-5 py-5 flex justify-center items-center text-white rounded-2xl bg-[rgba(255,255,255,0.3)]'>
+                        <h1 className='tracking-[0.1rem] font-medium text-2xl'>VPSTORAGE</h1>
+                    </div>
                 </div>
             </section>
         </>
