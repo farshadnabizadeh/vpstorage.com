@@ -13,13 +13,13 @@ import useWindowDimensions from '@/Hooks/useWindowDimensions'
 const Mobile = () => {
     return (
         <>
-            <div className='relative w-full h-[400px] bg-[#212F3C]'>
+            <div className='relative w-full h-[300px] bg-[#212F3C]'>
                 <div className='absolute w-full h-full flex justify-center'>
-                    <div className='absolute w-52 h-52'>
+                    <div className='absolute w-40 h-40'>
                         <Image fill src={Logo} alt='Logo' />
                     </div>
                 </div>
-                <div className='w-full absolute top-48 flex justify-center'>
+                <div className='w-full absolute top-36 flex justify-center'>
                     <ul className='w-[85%] mt-10 text-white flex justify-between'>
                         <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Home</li>
                         <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Services</li>
@@ -28,7 +28,7 @@ const Mobile = () => {
                         <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Contact Us</li>
                     </ul>
                 </div>
-                <div className='w-full absolute top-72 flex justify-center'>
+                <div className='w-full absolute top-52 flex justify-center'>
                     <ul className='w-[85%] mt-10 text-white flex justify-center'>
                         <li className='mx-3 flex items-center'>
                             <div className='w-6 h-6 cursor-pointer'><Image src={Linkedin} alt='LinkedIn' /></div>
