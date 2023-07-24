@@ -63,7 +63,7 @@ const Mobile = () => {
 const index: FC<widthProps> = (width) => {
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
-        if (width.width <= 400) { setTemplate(<Mobile />) }
+        if (width.width <= 1024) { setTemplate(<Mobile />) }
         if (width.width > 1024) { setTemplate(<Desktop />) }
     }, [width])
 
