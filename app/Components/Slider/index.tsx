@@ -45,13 +45,13 @@ const Mobile = () => {
                 <div className='absolute top-44 left-0 w-full flex justify-center'>
                     <div className='w-full flex px-3'>
                         <div className='w-[50%] h-full flex justify-center'>
-                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#1F618D] tracking-[0.03rem]'>
-                                 Signin       
+                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#212F3C] tracking-[0.03rem]'>
+                                 Sign-in       
                             </button>
                         </div>
                         <div className='w-[50%] h-full flex justify-center'>
-                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#1F618D] tracking-[0.03rem]'>
-                                 Signup       
+                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#A04000] tracking-[0.03rem]'>
+                                 Sign-up       
                             </button>
                         </div>
                     </div>
