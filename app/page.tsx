@@ -7,13 +7,13 @@ import useWindowDimensions from '@/Hooks/useWindowDimensions'
 import { useEffect, useState } from 'react'
 
 
-const Mobile = (props:any) => {
+const Mobile = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
           <div className='w-full flex justify-center'>
-            <Slider width={props.width}/>
+            <Slider width={props.width} />
           </div>
           <div className='w-full flex text-black flex-col'>
             <div className='w-full'>
@@ -70,21 +70,21 @@ const Mobile = (props:any) => {
   )
 }
 
-const Desktop = () => {
+const Desktop = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
           <div className='w-full flex justify-center'>
-            <Slider />
+            <Slider width={props.width} />
           </div>
           <div className='w-full flex justify-between mt-20 px-[107px] text-black'>
             <div className='w-[50%]  px-5'>
               <div className='w-full'>
-                <h1 className='text-2xl font-Kanit font-bold'>Why Do I Need to Use a VPN ?</h1>
+                <h1 className='2xl:text-2xl xl:text-lg font-Kanit font-bold'>Why Do I Need to Use a VPN ?</h1>
               </div>
-              <div className='py-5 w-[90%]'>
-                <p className='text-base font-medium w-full text-justify'>
+              <div className='py-5 md:w-full xl:w-full 2xl:w-[90%]'>
+                <p className='2xl:text-lg xl:text-base lg:text-[12px] font-medium w-full text-justify'>
                   A VPN (Virtual Private Network) is essential as it encrypts your internet traffic, ensuring your online activities and data remain private and secure. It becomes crucial on public Wi-Fi networks to protect sensitive information from potential threats.
 
                   VPN allows bypassing geo-restrictions, accessing content and services blocked in your region, such as streaming platforms and websites. By masking your IP address, it enables anonymous browsing, preventing online tracking.
@@ -99,20 +99,20 @@ const Desktop = () => {
                 </p>
               </div>
             </div>
-            <div className='relative w-[50%] h-[500px]'>
+            <div className='relative lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[600px]'>
               <Image className='rounded-lg' fill src={vpnimage} alt='VPNImage' />
             </div>
           </div>
           <div className='w-full flex justify-between mt-20 px-[107px] text-black mb-[150px]'>
-            <div className='relative w-[50%] h-[500px]'>
+            <div className='relative lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[600px]'>
               <Image className='rounded-lg' fill src={vpnimage2} alt='VPNImage' />
             </div>
             <div className='w-[50%]'>
               <div className='translate-x-[40px]'>
-                <h1 className='text-2xl font-Kanit font-bold'>How Can VPN Protected us in Internet ?</h1>
+                <h1 className='2xl:text-2xl xl:text-lg font-Kanit font-bold'>How Can VPN Protected us in Internet ?</h1>
               </div>
-              <div className='px-12 py-5'>
-                <p className='text-base font-medium w-full text-justify'>
+              <div className='lg:pl-12 xl:pl-12 2xl:px-12 py-5'>
+                <p className='2xl:text-lg xl:text-base lg:text-[12px] font-medium w-full text-justify'>
                   A VPN (Virtual Private Network) protects us on the internet by encrypting our internet traffic, ensuring that our online activities and data remain confidential and safe from potential threats like hackers and surveillance.
 
                   When using public Wi-Fi networks, a VPN acts as a shield, preventing malicious entities from intercepting our sensitive information, reducing the risk of data breaches.
@@ -141,7 +141,7 @@ export default function Home() {
   useEffect(() => {
     console.log(width)
     if (width <= 400) { setTemplate(<Mobile width={width} />) }
-    if (width > 1024) { setTemplate(<Desktop />) }
+    if (width > 1024) { setTemplate(<Desktop width={width} />) }
     // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
   }, [width])
   return (
