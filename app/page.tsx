@@ -70,13 +70,13 @@ const Mobile = (props: any) => {
   )
 }
 
-const Desktop = () => {
+const Desktop = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
         <div className='container translate-y-[70px]'>
           <div className='w-full flex justify-center'>
-            <Slider />
+            <Slider width={props.width} />
           </div>
           <div className='w-full flex justify-between mt-20 px-[107px] text-black'>
             <div className='w-[50%]  px-5'>
@@ -141,7 +141,7 @@ export default function Home() {
   useEffect(() => {
     console.log(width)
     if (width <= 400) { setTemplate(<Mobile width={width} />) }
-    if (width > 1024) { setTemplate(<Desktop />) }
+    if (width > 1024) { setTemplate(<Desktop width={width} />) }
     // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
   }, [width])
   return (
