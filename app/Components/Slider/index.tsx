@@ -42,6 +42,20 @@ const Mobile = () => {
                         <h1 className='tracking-[0.1rem] font-medium text-2xl'>VPSTORAGE</h1>
                     </div>
                 </div>
+                <div className='absolute top-44 left-0 w-full flex justify-center'>
+                    <div className='w-full flex px-3'>
+                        <div className='w-[50%] h-full flex justify-center'>
+                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#1F618D] tracking-[0.03rem]'>
+                                 Signin       
+                            </button>
+                        </div>
+                        <div className='w-[50%] h-full flex justify-center'>
+                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#1F618D] tracking-[0.03rem]'>
+                                 Signup       
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     )
