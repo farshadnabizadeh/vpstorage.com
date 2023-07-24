@@ -57,7 +57,7 @@ const Desktop = () => {
                         <Image src={Logo} alt='Logo' />
                     </div>
                     <div className='w-full'>
-                        <ul className='w-full px-[500px] flex justify-between py-5'>
+                        <ul className='w-full lg:px-[300px] xl:px-[450px] 2xl:px-[500px] flex justify-between py-5'>
                             <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Home</li>
                             <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Services</li>
                             <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Pricing</li>
