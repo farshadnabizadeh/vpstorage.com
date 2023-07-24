@@ -99,12 +99,12 @@ const Desktop = () => {
                 </p>
               </div>
             </div>
-            <div className='relative w-[50%] h-[500px]'>
+            <div className='relative lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[600px]'>
               <Image className='rounded-lg' fill src={vpnimage} alt='VPNImage' />
             </div>
           </div>
           <div className='w-full flex justify-between mt-20 px-[107px] text-black mb-[150px]'>
-            <div className='relative w-[50%] h-[500px]'>
+            <div className='relative lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[600px]'>
               <Image className='rounded-lg' fill src={vpnimage2} alt='VPNImage' />
             </div>
             <div className='w-[50%]'>
