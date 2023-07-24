@@ -35,8 +35,8 @@ const Desktop = () => {
 const Mobile = () => {
     return (
         <>
-            <section className='relative w-[93%] h-[250px] md:h-[400px] rounded-3xl mt-3 mb-10'>
-                <Image className='rounded-2xl' fill src={Home} alt='HomepageHero' />
+            <section className='relative w-full sm:w-[93%] h-[250px] md:h-[400px] rounded-none sm:rounded-3xl mt-0 sm:mt-3 mb-10'>
+                <Image className='rounded-none sm:rounded-2xl' fill src={Home} alt='HomepageHero' />
                 <div className='absolute z-0 top-0 w-full h-full bg-[rgba(0,0,0,0.6)] rounded-2xl'>
 
                 </div>
