@@ -67,14 +67,14 @@ const Desktop = () => {
                     </div>
                     <div className='w-full h-[50px] border-[1px] border-b-[0px] rounded-t-xl border-[rgba(255,255,255,0.5)] mt-[50px] flex justify-between items-center px-[50px]'>
                         <div className='w-full'>
-                            <ul className='flex'>
-                                <li className='mr-16 flex items-center'>
-                                    <div className='w-5 h-5'><Image src={WhatsApp} alt='whatsapp' /></div>
-                                    <div className='mx-4 font-Kanit text-sm pt-1'>+90 ( 543 ) 899-10-63</div>
+                            <ul className='flex w-full'>
+                                <li className='lg:mr-0 xl:mr-16 flex items-center'>
+                                    <div className='lg:w-6 lg:h-6 flxe justify-center items-center'><Image src={WhatsApp} alt='whatsapp' /></div>
+                                    <div className='lg:mx-0 xl:mx-4 lg:text-xs font-Kanit xl:text-sm pt-1 lg:translate-x-2 xl:translate-x-0'>+90 ( 543 ) 899-10-63</div>
                                 </li>
                                 <li className='flex items-center'>
-                                    <div className='w-6 h-6'><Image src={Email} alt='email' /></div>
-                                    <div className='mx-4 font-Kanit text-sm pt-1'>farshadnabizadeh1993@gmail.com</div>
+                                    <div className='w-6 h-6 lg:translate-x-10 xl:translate-x-0'><Image src={Email} alt='email' /></div>
+                                    <div className='mx-4 font-Kanit text-sm pt-1 lg:translate-x-7 xl:translate-x-0'>farshadnabizadeh1993@gmail.com</div>
                                 </li>
                             </ul>
                         </div>
