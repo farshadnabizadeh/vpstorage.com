@@ -11,9 +11,9 @@ const Desktop = () => {
         <>
             <section className='relative w-[86%] h-[500px] rounded-3xl mt-3'>
                 <Image className='rounded-2xl' fill src={Home} alt='HomepageHero' />
-                <div className='absolute top-0 left-0 w-[50%] h-full'>
+                <div className='absolute top-0 left-0 w-[70%] h-full'>
                     <div className='w-full flex px-20 text-4xl font-medium tracking-[4px] mt-20'>VPSTORAGE</div>
-                    <div className='w-[80%] text-justify mt-6 flex items-center text-sm px-20'>
+                    <div className='lg:w-full xl:w-[80%] text-justify mt-6 flex items-center text-sm px-20'>
                         Welcome to our all-in-one online platform, your ultimate destination for top-notch VPN and
                         Storage Services! Safeguard your online privacy with our high-speed VPN connections, ensuring your
                         data remains encrypted and secure. Access geo-restricted content effortlessly while enjoying the convenience
