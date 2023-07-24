@@ -19,8 +19,30 @@ const Mobile = () => {
                         <Image fill src={Logo} alt='Logo' />
                     </div>
                 </div>
-                <div className='w-full h-28 absolute top-48 border-2 border-[red]'>
-
+                <div className='w-full absolute top-48 flex justify-center'>
+                    <ul className='w-[85%] mt-10 text-white flex justify-between'>
+                        <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Home</li>
+                        <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Services</li>
+                        <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Pricing</li>
+                        <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Blog</li>
+                        <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Contact Us</li>
+                    </ul>
+                </div>
+                <div className='w-full absolute top-72 flex justify-center'>
+                    <ul className='w-[85%] mt-10 text-white flex justify-center'>
+                        <li className='mx-3 flex items-center'>
+                            <div className='w-6 h-6 cursor-pointer'><Image src={Linkedin} alt='LinkedIn' /></div>
+                        </li>
+                        <li className='mx-3 flex items-center'>
+                            <div className='w-8 h-8 cursor-pointer'><Image src={Instagram} alt='Instagram' /></div>
+                        </li>
+                        <li className='mx-3 flex items-center'>
+                            <div className='w-9 h-9 cursor-pointer'><Image src={Youtube} alt='Youtube' /></div>
+                        </li>
+                        <li className='mx-3 ml-1 flex items-center'>
+                            <div className='w-7 h-7 cursor-pointer'><Image src={Telegram} alt='Telegram' /></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>
