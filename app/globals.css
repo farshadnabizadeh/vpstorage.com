@@ -96,11 +96,11 @@ body {
 }
 
 .openingSidebar {
-  animation: openSidebar 1s linear;
+  animation: openSidebar .4s linear;
 }
 
 .closingSidebar {
-  animation: closeSidebar 1s linear;
+  animation: closeSidebar .7s linear;
 }
 
 .LanguageAnimation {
