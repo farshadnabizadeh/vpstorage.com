@@ -31,7 +31,7 @@ const Mobile: FC = () => {
         setOpen(true)
         setTimeout(() => {
             setList(false)
-        }, 900)
+        }, 500)
     }
     const closefunction = () => {
         setAnimationStatus('closingSidebar')
@@ -39,7 +39,7 @@ const Mobile: FC = () => {
         setTimeout(() => {
             setOpen(false)
             setHiddenMenu(true)
-        }, 1000)
+        }, 500)
     }
     const openLanguageBar = () => {
         if (LanguageStatus) {
@@ -47,13 +47,15 @@ const Mobile: FC = () => {
             setLanguageBarOpening('CloseLanguageBarAnnimation')
             setTimeout(() => {
                 setLanguageStatus(false)
-            }, 1000)
+            }, 500)
+
         } else {
+            setLanguageBarOpening('LanguageAnimation')
+
             setTimeout(() => {
                 setHidden(false)
-            }, 1000)
+            }, 500)
             setLanguageStatus(true)
-            setLanguageBarOpening('LanguageAnimation')
         }
     }
     const addLanguageBar = (data: any) => {

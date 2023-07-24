@@ -11,7 +11,7 @@ const Mobile = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
-        <div className='container translate-y-[70px]'>
+        <div className='container translate-y-[50px] sm:translate-y-[70px]'>
           <div className='w-full flex justify-center'>
             <Slider width={props.width} />
           </div>

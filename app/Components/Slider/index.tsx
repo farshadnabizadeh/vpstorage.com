@@ -35,26 +35,16 @@ const Desktop = () => {
 const Mobile = () => {
     return (
         <>
-            <section className='relative w-[93%] h-[250px] rounded-3xl mt-3 mb-10'>
-                <Image className='rounded-2xl' fill src={Home} alt='HomepageHero' />
-                <div className='absolute top-0 left-0 w-full flex justify-center'>
-                    <div className='w-[90%] mt-5 py-5 flex justify-center items-center text-white rounded-2xl bg-[rgba(255,255,255,0.3)]'>
-                        <h1 className='tracking-[0.1rem] font-medium text-2xl'>VPSTORAGE</h1>
-                    </div>
+            <section className='relative w-full sm:w-[93%] h-[250px] md:h-[400px] rounded-none sm:rounded-3xl mt-0 sm:mt-3 mb-10'>
+                <Image className='rounded-none sm:rounded-2xl' fill src={Home} alt='HomepageHero' />
+                <div className='absolute z-0 top-0 w-full h-full bg-[rgba(0,0,0,0.6)] rounded-2xl'>
+
                 </div>
-                <div className='absolute top-44 left-0 w-full flex justify-center'>
-                    <div className='w-full flex px-3'>
-                        <div className='w-[50%] h-full flex justify-center'>
-                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#212F3C] tracking-[0.03rem]'>
-                                 Sign-in       
-                            </button>
-                        </div>
-                        <div className='w-[50%] h-full flex justify-center'>
-                            <button className='w-[90%] h-full text-white text-lg py-3 rounded-2xl bg-[#A04000] tracking-[0.03rem]'>
-                                 Sign-up       
-                            </button>
-                        </div>
-                    </div>
+                <div className='absolute z-20 top-0 left-0 w-full flex justify-center'>
+
+                </div>
+                <div className='absolute z-30 top-44 md:top-32 left-0 w-full flex justify-center'>
+
                 </div>
             </section>
         </>
