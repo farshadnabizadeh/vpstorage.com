@@ -83,8 +83,8 @@ const Desktop = () => {
               <div className='w-full'>
                 <h1 className='2xl:text-2xl xl:text-lg font-Kanit font-bold'>Why Do I Need to Use a VPN ?</h1>
               </div>
-              <div className='py-5 w-[90%]'>
-                <p className='2xl:text-base xl:text-sm lg:text-xs font-medium w-full text-justify'>
+              <div className='py-5 md:w-full xl:w-full 2xl:w-[90%]'>
+                <p className='2xl:text-lg xl:text-base lg:text-[12px] font-medium w-full text-justify'>
                   A VPN (Virtual Private Network) is essential as it encrypts your internet traffic, ensuring your online activities and data remain private and secure. It becomes crucial on public Wi-Fi networks to protect sensitive information from potential threats.
 
                   VPN allows bypassing geo-restrictions, accessing content and services blocked in your region, such as streaming platforms and websites. By masking your IP address, it enables anonymous browsing, preventing online tracking.
@@ -111,8 +111,8 @@ const Desktop = () => {
               <div className='translate-x-[40px]'>
                 <h1 className='2xl:text-2xl xl:text-lg font-Kanit font-bold'>How Can VPN Protected us in Internet ?</h1>
               </div>
-              <div className='px-12 py-5'>
-                <p className='2xl:text-base xl:text-sm lg:text-xs font-medium w-full text-justify'>
+              <div className='lg:pl-12 xl:pl-12 2xl:px-12 py-5'>
+                <p className='2xl:text-lg xl:text-base lg:text-[12px] font-medium w-full text-justify'>
                   A VPN (Virtual Private Network) protects us on the internet by encrypting our internet traffic, ensuring that our online activities and data remain confidential and safe from potential threats like hackers and surveillance.
 
                   When using public Wi-Fi networks, a VPN acts as a shield, preventing malicious entities from intercepting our sensitive information, reducing the risk of data breaches.
