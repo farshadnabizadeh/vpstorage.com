@@ -104,9 +104,9 @@ body {
 }
 
 .LanguageAnimation {
-  animation: LanguageBar 1s linear;
+  animation: LanguageBar .5s linear;
 }
 
 .CloseLanguageBarAnnimation {
-  animation: CloseLanguageBar 1.5s linear;
+  animation: CloseLanguageBar .5s linear;
 }

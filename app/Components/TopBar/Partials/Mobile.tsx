@@ -47,11 +47,11 @@ const Mobile: FC = () => {
             setLanguageBarOpening('CloseLanguageBarAnnimation')
             setTimeout(() => {
                 setLanguageStatus(false)
-            }, 1000)
+            }, 500)
         } else {
             setTimeout(() => {
                 setHidden(false)
-            }, 1000)
+            }, 500)
             setLanguageStatus(true)
             setLanguageBarOpening('LanguageAnimation')
         }

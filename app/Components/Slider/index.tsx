@@ -41,17 +41,10 @@ const Mobile = () => {
 
                 </div>
                 <div className='absolute z-20 top-0 left-0 w-full flex justify-center'>
-                    <div className='w-[90%] max-w-[350px] mt-5 py-5 flex justify-center items-center text-white rounded-2xl bg-[rgba(255,255,255,0.3)]'>
-                        <h1 className='tracking-[0.1rem] font-medium text-2xl'>VPSTORAGE</h1>
-                    </div>
+
                 </div>
                 <div className='absolute z-30 top-44 md:top-32 left-0 w-full flex justify-center'>
-                    <div className='w-full md:flex px-3 md:px-0 max-w-[609px] font-medium text-justify text-lg hidden'>
-                        Welcome to our all-in-one online platform, your ultimate destination for top-notch VPN and Storage Services! 
-                        Safeguard your online privacy with our high-speed VPN connections, ensuring your data remains encrypted and 
-                        secure. Access geo-restricted content effortlessly while enjoying the convenience of our reliable cloud 
-                        storage solutions. Join us today and experience seamless browsing and data protection in one place
-                    </div>
+
                 </div>
             </section>
         </>
