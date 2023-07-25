@@ -93,7 +93,7 @@ const Desktop = () => {
         <Language languagePopupStatus={languagePopupStatus} clicking={clicking} addLanguage={addLanguage} />
     </>)
 }
-const index: FC<setLangProps> = (props) => {
+const Index: FC<setLangProps> = (props) => {
     const { height, width } = useWindowDimensions();
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
@@ -108,4 +108,4 @@ const index: FC<setLangProps> = (props) => {
     )
 }
 
-export default index
+export default Index

@@ -100,7 +100,10 @@ const Desktop = () => {
         </>
     )
 }
-const index: FC = () => {
+
+
+
+const Index: FC = () => {
     const { height, width } = useWindowDimensions();
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
@@ -114,5 +117,5 @@ const index: FC = () => {
         </>
     )
 }
-index.displayName = "index"
-export default index
+Index.displayName = "Index"
+export default Index

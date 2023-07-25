@@ -32,7 +32,7 @@ const Mobile = (props: any) => {
 
                   Moreover, a VPN adds an extra layer of protection against potential hackers and identity theft, creating a secure and encrypted connection between your device and the VPN server.
 
-                  In summary, VPNs are vital tools for online security, privacy, and accessing content, benefiting individuals and businesses in today's digital landscape.
+                  In summary, VPNs are vital tools for online security, privacy, and accessing content, benefiting individuals and businesses in today&apos;s digital landscape.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const Desktop = (props: any) => {
 
                   Moreover, a VPN adds an extra layer of protection against potential hackers and identity theft, creating a secure and encrypted connection between your device and the VPN server.
 
-                  In summary, VPNs are vital tools for online security, privacy, and accessing content, benefiting individuals and businesses in today's digital landscape.
+                  In summary, VPNs are vital tools for online security, privacy, and accessing content, benefiting individuals and businesses in today&apos;s digital landscape.
                 </p>
               </div>
             </div>
