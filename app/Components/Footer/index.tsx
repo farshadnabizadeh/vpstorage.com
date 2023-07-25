@@ -19,7 +19,7 @@ const Mobile = () => {
                         <Image fill src={Logo} alt='Logo' />
                     </div>
                 </div>
-                <div className='w-full absolute top-36 flex justify-center'>
+                <div className='w-full absolute top-36 flex justify-center lg:px-36 md:px-24 sm:px-14'>
                     <ul className='w-[85%] mt-10 text-white flex justify-between'>
                         <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Home</li>
                         <li className='text-sm font-Kanit tracking-[1px] cursor-pointer'>Services</li>
@@ -104,7 +104,6 @@ const index: FC = () => {
     const { height, width } = useWindowDimensions();
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
-        console.log(width)
         if (width <= 1024) { setTemplate(<Mobile />) }
         if (width > 1024) { setTemplate(<Desktop />) }
         // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }

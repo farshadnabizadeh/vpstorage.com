@@ -24,7 +24,7 @@ const index: FC<languagePopupStatusProps> = (props) => {
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
                 props.clicking(false)
                 // setlanguagePopupStatus(false);
-                console.log(event.target)
+                // console.log(event.target)
             }
         }
         // Bind the event listener

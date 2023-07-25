@@ -11,7 +11,7 @@ const Mobile = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
-        <div className='container translate-y-[50px] sm:translate-y-[70px]'>
+        <div className='translate-y-[50px]'>
           <div className='w-full flex justify-center'>
             <Slider width={props.width} />
           </div>
@@ -21,7 +21,7 @@ const Mobile = (props: any) => {
                 <h1 className='text-lg font-Kanit font-bold text-center'>Why Do I Need to Use a VPN ?</h1>
               </div>
               <div className='py-5 px-5 w-full mb-5'>
-                <p className='text-sm font-normal w-full text-justify'>
+                <p className='text-sm font-normal w-full text-justify lg:px-16 md:px-14 sm:px-10'>
                   A VPN (Virtual Private Network) is essential as it encrypts your internet traffic, ensuring your online activities and data remain private and secure. It becomes crucial on public Wi-Fi networks to protect sensitive information from potential threats.
 
                   VPN allows bypassing geo-restrictions, accessing content and services blocked in your region, such as streaming platforms and websites. By masking your IP address, it enables anonymous browsing, preventing online tracking.
@@ -36,7 +36,7 @@ const Mobile = (props: any) => {
                 </p>
               </div>
             </div>
-            <div className='relative w-full h-[400px]'>
+            <div className='relative w-full h-[400px] sm:h-[600px] md:h-[600px] lg:h-[650px]'>
               <Image className='' fill src={vpnimage} alt='VPNImage' />
             </div>
           </div>
@@ -45,7 +45,7 @@ const Mobile = (props: any) => {
               <div className='w-full'>
                 <h1 className='text-lg mt-5 mb-5 font-Kanit font-bold text-center text-black'>How Can VPN Protected us in Internet ?</h1>
               </div>
-              <div className='px-5 h-full bg-white'>
+              <div className='px-5 h-full bg-white lg:px-16 md:px-14 sm:px-10'>
                 <p className='text-sm font-normal w-full text-justify text-black pb-32'>
                   A VPN (Virtual Private Network) protects us on the internet by encrypting our internet traffic, ensuring that our online activities and data remain confidential and safe from potential threats like hackers and surveillance.
 
@@ -139,7 +139,6 @@ export default function Home() {
   const { height, width } = useWindowDimensions();
   const [template, setTemplate] = useState<any>();
   useEffect(() => {
-    console.log(width)
     if (width <= 1024) { setTemplate(<Mobile width={width} />) }
     if (width > 1024) { setTemplate(<Desktop width={width} />) }
     // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }

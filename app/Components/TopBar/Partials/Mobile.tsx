@@ -102,7 +102,7 @@ const Mobile: FC = () => {
                     setLanguageStatus(false)
                 }, 1000)
                 // setlanguagePopupStatus(false);
-                console.log(event.target)
+                // console.log(event.target)
             }
         }
         // Bind the event listener
