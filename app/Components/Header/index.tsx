@@ -97,7 +97,6 @@ const index: FC<setLangProps> = (props) => {
     const { height, width } = useWindowDimensions();
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
-        console.log(width)
         if (width <= 1024) { setTemplate(<Mobile />) }
         if (width > 1024) { setTemplate(<Desktop />) }
         // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }

@@ -139,7 +139,6 @@ export default function Home() {
   const { height, width } = useWindowDimensions();
   const [template, setTemplate] = useState<any>();
   useEffect(() => {
-    console.log(width)
     if (width <= 1024) { setTemplate(<Mobile width={width} />) }
     if (width > 1024) { setTemplate(<Desktop width={width} />) }
     // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
