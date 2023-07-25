@@ -37,14 +37,22 @@ const Mobile = () => {
         <>
             <section className='relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-none mt-0 mb-10'>
                 <Image className='' fill src={Home} alt='HomepageHero' />
-                <div className='absolute z-0 top-0 w-full h-full bg-[rgba(0,0,0,0.6)] rounded-2xl'>
-
-                </div>
-                <div className='absolute z-20 top-0 left-0 w-full flex justify-center'>
-
-                </div>
-                <div className='absolute z-30 top-44 md:top-32 left-0 w-full flex justify-center'>
-
+                <div className='absolute top-0 left-0 w-[70%] h-full hidden sm:block md:block lg:block'>
+                    <div className='w-full flex px-20 text-4xl font-medium tracking-[4px] mt-20'>VPSTORAGE</div>
+                    <div className='lg:w-full xl:w-[80%] text-justify mt-6 flex items-center text-sm px-0 sm:pl-20 md:px-20 lg:md:px-20'>
+                        Welcome to our all-in-one online platform, your ultimate destination for top-notch VPN and
+                        Storage Services! Safeguard your online privacy with our high-speed VPN connections, ensuring your
+                        data remains encrypted and secure. Access geo-restricted content effortlessly while enjoying the convenience
+                        of our reliable cloud storage solutions. Join us today and experience seamless browsing and
+                        data protection in one place
+                    </div>
+                    <div className='px-20 mt-5  md:mt-14'>
+                        <div className='w-full h-[50px]'>
+                            <button className='w-[75%] h-[50px] bg-gradient-to-r from-[#212F3C] to-[#000000] hover:from-[#000000] hover:to-[#212F3C] rounded-lg text-[#fff] border-2 border-[#fff] flex justify-center items-center'>
+                                <span className='text-lg'>START</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
