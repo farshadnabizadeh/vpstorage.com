@@ -183,7 +183,7 @@ const Mobile: FC = () => {
                                 {
                                     Lang.map((item, index) => (
                                         <li key={index} onClick={() => addLanguageBar(item)} className='w-full flex items-center py-4 border-b-2 border-[#ffffff]'>
-                                            <div className='mx-4 relative w-9 h-7 rounded-full border-2 border-[#ffffff]'>
+                                            <div className='mx-4 relative w-8 h-7 rounded-full border-2 border-[#ffffff]'>
                                                 <Image fill src={item.Flag} alt={item.Name} />
                                             </div>
                                             <div className='w-full h-full'>{item.Name}</div>
