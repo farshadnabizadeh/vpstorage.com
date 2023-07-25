@@ -58,7 +58,7 @@ const Mobile = () => {
         </>
     )
 }
-const index: FC<widthProps> = (width) => {
+const Index: FC<widthProps> = (width) => {
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
         if (width.width <= 1024) { setTemplate(<Mobile />) }
@@ -71,5 +71,5 @@ const index: FC<widthProps> = (width) => {
         </>
     )
 }
-index.displayName = "index"
-export default index
+Index.displayName = "Index"
+export default Index

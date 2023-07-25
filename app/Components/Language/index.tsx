@@ -5,12 +5,12 @@ import { Lang } from '@/data/Language'
 import US from '@/assets/flags/US.png'
 import IR from '@/assets/flags/IR.png'
 import RU from '@/assets/flags/RU.png'
-interface languagePopupStatusProps {
+interface LanguagePopupStatusProps {
     languagePopupStatus?: boolean,
     clicking?: any,
     addLanguage?: any,
 }
-const index: FC<languagePopupStatusProps> = (props) => {
+const Index: FC<LanguagePopupStatusProps> = (props) => {
     const { languagePopupStatus } = props
     const wrapperRef = useRef<any>(null);
     const addLanguage = (data: any) => {
@@ -67,5 +67,5 @@ const index: FC<languagePopupStatusProps> = (props) => {
         </>
     )
 }
-index.displayName = "index"
-export default index
+Index.displayName = "Index"
+export default Index

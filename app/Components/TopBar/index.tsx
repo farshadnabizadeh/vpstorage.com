@@ -7,13 +7,15 @@ import Logo from '@/assets/jpg/Logo.png'
 import Desktop from './Partials/Desktop'
 import Mobile from './Partials/Mobile'
 import useWindowDimensions from '@/Hooks/useWindowDimensions'
-const index: FC = () => {
+const Index: FC = () => {
     const { height, width } = useWindowDimensions();
     const [template, setTemplate] = useState<any>();
     useEffect(() => {
         // console.log(width)
-        if (width <= 1024) { setTemplate(<Mobile />) }
-        if (width > 1024) { setTemplate(<Desktop />) }
+        if (width) {
+            if (width <= 1024) { setTemplate(<Mobile />) }
+            if (width > 1024) { setTemplate(<Desktop />) }
+        }
         // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
     }, [width])
 
@@ -23,5 +25,5 @@ const index: FC = () => {
         </>
     )
 }
-index.displayName = "index"
-export default index
+Index.displayName = "Index"
+export default Index
