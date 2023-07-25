@@ -21,7 +21,7 @@ const Mobile = (props: any) => {
                 <h1 className='text-lg font-Kanit font-bold text-center'>Why Do I Need to Use a VPN ?</h1>
               </div>
               <div className='py-5 px-5 w-full mb-5'>
-                <p className='text-sm font-normal w-full text-justify'>
+                <p className='text-sm font-normal w-full text-justify lg:px-16 md:px-14 sm:px-10'>
                   A VPN (Virtual Private Network) is essential as it encrypts your internet traffic, ensuring your online activities and data remain private and secure. It becomes crucial on public Wi-Fi networks to protect sensitive information from potential threats.
 
                   VPN allows bypassing geo-restrictions, accessing content and services blocked in your region, such as streaming platforms and websites. By masking your IP address, it enables anonymous browsing, preventing online tracking.
@@ -45,7 +45,7 @@ const Mobile = (props: any) => {
               <div className='w-full'>
                 <h1 className='text-lg mt-5 mb-5 font-Kanit font-bold text-center text-black'>How Can VPN Protected us in Internet ?</h1>
               </div>
-              <div className='px-5 h-full bg-white'>
+              <div className='px-5 h-full bg-white lg:px-16 md:px-14 sm:px-10'>
                 <p className='text-sm font-normal w-full text-justify text-black pb-32'>
                   A VPN (Virtual Private Network) protects us on the internet by encrypting our internet traffic, ensuring that our online activities and data remain confidential and safe from potential threats like hackers and surveillance.
 
