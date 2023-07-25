@@ -11,7 +11,7 @@ const Mobile = (props: any) => {
   return (
     <>
       <section className='w-full flex justify-center'>
-        <div className='container translate-y-[50px] sm:translate-y-[70px]'>
+        <div className='translate-y-[50px]'>
           <div className='w-full flex justify-center'>
             <Slider width={props.width} />
           </div>
@@ -36,7 +36,7 @@ const Mobile = (props: any) => {
                 </p>
               </div>
             </div>
-            <div className='relative w-full h-[400px]'>
+            <div className='relative w-full h-[400px] sm:h-[600px] md:h-[600px] lg:h-[650px]'>
               <Image className='' fill src={vpnimage} alt='VPNImage' />
             </div>
           </div>
