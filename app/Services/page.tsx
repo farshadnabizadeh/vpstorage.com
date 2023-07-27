@@ -21,6 +21,8 @@ const page: FC = () => {
           <Slider width={width} />
         </div>
         <div className='w-full h-full grid grid-cols-3 gap-10 px-[110px]'>
+
+
           <div className='my-10 rounded-lg border-[1px] border-[#555]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.08rem]'>
               Plan 1
@@ -38,7 +40,25 @@ const page: FC = () => {
                 <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
               </div>
             </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
           </div>
+
+
           <div className='my-10 rounded-lg border-[1px] border-[#555]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.08rem]'>
               Plan 1
@@ -53,10 +73,28 @@ const page: FC = () => {
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
                 </div>
-                <div></div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
               </div>
             </div>
           </div>
+
+
           <div className='my-10 rounded-lg border-[1px] border-[#555]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.08rem]'>
               Plan 1
@@ -71,10 +109,28 @@ const page: FC = () => {
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
                 </div>
-                <div></div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='flex items-center'>
+                <div className='w-8 h-8 relative translate-x-[20px]'>
+                  <Image fill src={SuccesssSVG} alt="plans" />
+                </div>
+                <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
