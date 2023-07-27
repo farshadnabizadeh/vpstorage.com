@@ -5,7 +5,7 @@ import Email from '@/assets/svg/email.svg'
 import Logo from '@/assets/jpg/Logo.png'
 const Desktop: FC = () => {
     return (
-        <section className='w-full h-[50px] flex justify-center bg-[#212F3C]'>
+        <section className='w-full h-[50px] flex justify-center bg-[#212F3C] text-white'>
             <div className='container h-full flex justify-between items-center px-28'>
                 <div>
                     <ul className='flex'>

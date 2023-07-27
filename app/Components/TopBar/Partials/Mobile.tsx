@@ -114,7 +114,7 @@ const Mobile: FC = () => {
     }, [wrapperRef]);
     return (
         <div className='w-full relative'>
-            <section className='w-full absolute z-0 h-[50px] bg-[#212F3C]'>
+            <section className='w-full absolute z-0 h-[50px] bg-[#212F3C] text-white'>
                 <div className='flex justify-between h-full'>
                     <div className='w-[50%] h-full flex items-center px-5'>
                         {hiddenMenu ? <div onClick={openfunction} className='ratate relative m-2 w-9 h-9 rounded-full border-[1px] border-[#ffffff]'>
