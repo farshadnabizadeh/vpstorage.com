@@ -20,7 +20,7 @@ const page: FC = () => {
         <div className='w-full flex justify-center mt-[70px]'>
           <Slider width={width} />
         </div>
-        <div className='w-full h-full grid grid-cols-3 gap-28 translate-y-[65px]'>
+        <div className='w-full h-full grid grid-cols-3 gap-10 px-[110px]'>
           <div className='my-10 rounded-lg border-[1px] border-[#555]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.08rem]'>
               Plan 1
