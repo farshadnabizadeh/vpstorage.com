@@ -67,8 +67,8 @@ const Desktop = () => {
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between lg:pl-28 xl:px-28'>
                         <li title='Home' onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Home} alt='Home' /></li>
+                        <li title='Pricing' onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={41} height={41} src={Price} alt='Pricing' /> */}About Us </li>
                         <li title='Services' onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={25} height={25} src={Server} alt='Services' /> */}<Link href="/Services">Services</Link></li>
-                        <li title='Pricing' onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={41} height={41} src={Price} alt='Pricing' /> */} Pricing</li>
                     </ul>
                 </div>
                 <div className='w-[20%] flex justify-center items-center'>
@@ -79,7 +79,7 @@ const Desktop = () => {
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between items-center lg:pr-28 xl:px-28'>
                         <li title='Blog' onClick={() => setComponent('Blog')} className={`${component == 'Blog' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={30} height={30} src={Blog} alt='Blog' /> */}Blog</li>
-                        <li title='Contact Us' onClick={() => setComponent('Contact Us')} className={`${component == 'Contact Us' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={35} height={35} src={Contactus} alt='Contactus' /> */}Contactus</li>
+                        <li title='Contact Us' onClick={() => setComponent('Contact Us')} className={`${component == 'Contact Us' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={35} height={35} src={Contactus} alt='Contactus' /> */}Contact Us</li>
                         <li onClick={() => setlanguagePopupStatus(!languagePopupStatus)} className='cursor-pointer text-lg font-normal tracking-[0.02em]'>
                             <div className='w-full h-full flex justify-center items-center'>
                                 <div className='relative w-10 h-10 rounded-full border-[1px] border-[red]'>
