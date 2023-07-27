@@ -68,7 +68,7 @@ const Desktop = () => {
                     <ul className='w-full flex justify-between lg:pl-28 xl:px-28'>
                         <li title='Home' onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Home} alt='Home' /></li>
                         <li title='Services' onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={25} height={25} src={Server} alt='Services' /> */}<Link href="/Services">Services</Link></li>
-                        <li title='Pricing' onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={41} height={41} src={Price} alt='Pricing' /> */} Plans</li>
+                        <li title='Pricing' onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={41} height={41} src={Price} alt='Pricing' /> */} Pricing</li>
                     </ul>
                 </div>
                 <div className='w-[20%] flex justify-center items-center'>
