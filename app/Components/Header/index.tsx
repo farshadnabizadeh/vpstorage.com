@@ -11,6 +11,7 @@ import Price from '@/assets/svg/price.svg'
 import Blog from '@/assets/svg/blog.svg'
 import Contactus from '@/assets/svg/contactus.svg'
 import Language from '../Language'
+import Link from 'next/link'
 import useWindowDimensions from '@/Hooks/useWindowDimensions'
 
 interface setLangProps {
@@ -66,7 +67,7 @@ const Desktop = () => {
                 <div className='w-[40%] flex justify-center items-center'>
                     <ul className='w-full flex justify-between lg:pl-28 xl:px-28'>
                         <li title='Home' onClick={() => setComponent('Home')} className={`${component == 'Home' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}><Image width={35} height={35} src={Home} alt='Home' /></li>
-                        <li title='Services' onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={25} height={25} src={Server} alt='Services' /> */}Services</li>
+                        <li title='Services' onClick={() => setComponent('Services')} className={`${component == 'Services' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={25} height={25} src={Server} alt='Services' /> */}<Link href="/Services">Services</Link></li>
                         <li title='Pricing' onClick={() => setComponent('Pricing')} className={`${component == 'Pricing' ? 'text-[#3C15CC]' : ''} text-lg cursor-pointer font-medium tracking-[0.02em] flex justify-center items-center`}>{/* <Image width={41} height={41} src={Price} alt='Pricing' /> */} Plans</li>
                     </ul>
                 </div>
