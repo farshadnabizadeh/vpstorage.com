@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SuccesssSVG from '@/assets/svg/success.svg'
 import Slider from '../Components/Slider'
 import useWindowDimensions from '@/Hooks/useWindowDimensions'
-const page: FC = () => {
+const Page: FC = () => {
   const { height, width } = useWindowDimensions();
   const [template, setTemplate] = useState<any>();
   // useEffect(() => {
@@ -136,5 +136,5 @@ const page: FC = () => {
     </div>
   )
 }
-page.displayName = "page"
-export default page
+Page.displayName = "Page"
+export default Page
