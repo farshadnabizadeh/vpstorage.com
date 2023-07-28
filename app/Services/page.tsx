@@ -29,8 +29,8 @@ const Page: FC = () => {
             </div>
             <div className='w-full h-[100px] flex justify-center items-center bg-[#fff]'>
               <div className='text-base font-semibold text-[#000] mx-1'>$</div>
-              <div className='text-xl font-semibold text-[#000]'>200</div>
-              <div className='text-base font-semibold text-[#000]'>.88</div>
+              <div className='text-xl font-semibold text-[#000]'>5</div>
+              <div className='text-base font-semibold text-[#000]'>.00</div>
             </div>
             <div className='w-full py-2 border-b-[1px] border-t-[1px] border-[#555] bg-[#fff]'>
               <div className='flex items-center'>
@@ -78,8 +78,8 @@ const Page: FC = () => {
             </div>
             <div className='w-full h-[100px] flex justify-center items-center bg-white'>
               <div className='text-base font-semibold text-[#000] mx-1'>$</div>
-              <div className='text-xl font-semibold text-[#000]'>200</div>
-              <div className='text-base font-semibold text-[#000]'>.88</div>
+              <div className='text-xl font-semibold text-[#000]'>10</div>
+              <div className='text-base font-semibold text-[#000]'>.00</div>
             </div>
             <div className='w-full py-2 border-b-[1px] border-t-[1px] border-[#555] bg-white'>
               <div className='flex items-center'>
@@ -127,8 +127,8 @@ const Page: FC = () => {
             </div>
             <div className='w-full h-[100px] flex justify-center items-center bg-white'>
               <div className='text-base font-semibold text-[#000] mx-1'>$</div>
-              <div className='text-xl font-semibold text-[#000]'>200</div>
-              <div className='text-base font-semibold text-[#000]'>.88</div>
+              <div className='text-xl font-semibold text-[#000]'>15</div>
+              <div className='text-base font-semibold text-[#000]'>.00</div>
             </div>
             <div className='w-full py-2 border-b-[1px] border-t-[1px] border-[#555] bg-white'>
               <div className='flex items-center'>
