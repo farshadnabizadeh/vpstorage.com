@@ -9,7 +9,7 @@ const Page: FC = () => {
   return (
     <div className='w-full min-h-screen bg-white flex justify-center'>
       <div className='container h-full'>
-        <div className='w-full flex justify-center mt-[70px]'>
+        <div className='w-full flex justify-center mt-[50px] lg:mt-[70px]'>
           <Slider width={width} />
         </div>
         <div className='w-full h-full grid lg:grid-cols-2 xl:grid-cols-3 gap-10 px-[30px] sm:px-[50px] lg:px-[110px]'>
