@@ -23,16 +23,16 @@ const Page: FC = () => {
         <div className='w-full h-full grid grid-cols-3 gap-10 px-[110px]'>
 
 
-          <div className='my-10 rounded-lg border-[1px] border-[#555]'>
+          <div className='my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.1rem]'>
               Plan A
             </div>
-            <div className='w-full h-[100px] flex justify-center items-center'>
+            <div className='w-full h-[100px] flex justify-center items-center bg-[#fff]'>
               <div className='text-base font-semibold text-[#000] mx-1'>$</div>
               <div className='text-xl font-semibold text-[#000]'>200</div>
               <div className='text-base font-semibold text-[#000]'>.88</div>
             </div>
-            <div className='w-full py-2 border-b-[1px] border-t-[1px] border-[#555]'>
+            <div className='w-full py-2 border-b-[1px] border-t-[1px] border-[#555] bg-[#fff]'>
               <div className='flex items-center'>
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
@@ -40,7 +40,7 @@ const Page: FC = () => {
                 <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>2 CPU cores</div>
               </div>
             </div>
-            <div className='w-full py-2 border-b-[1px] border-[#555]'>
+            <div className='w-full py-2 border-b-[1px] border-[#555] bg-[#fff]'>
               <div className='flex items-center'>
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
@@ -48,7 +48,7 @@ const Page: FC = () => {
                 <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>4 GB RAM</div>
               </div>
             </div>
-            <div className='w-full py-2 border-b-[1px] border-[#555]'>
+            <div className='w-full py-2 border-b-[1px] border-[#555] bg-[#fff]'>
               <div className='flex items-center'>
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
@@ -56,12 +56,17 @@ const Page: FC = () => {
                 <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>1 TB Trafic</div>
               </div>
             </div>
-            <div className='w-full py-2 border-b-[1px] border-[#555]'>
+            <div className='w-full py-2 bg-[#fff]'>
               <div className='flex items-center'>
                 <div className='w-8 h-8 relative translate-x-[20px]'>
                   <Image fill src={SuccesssSVG} alt="plans" />
                 </div>
                 <div className='text-base text-[#555] font-semibold flex items-center translate-x-[50px]'>High Performance</div>
+              </div>
+            </div>
+            <div className='w-full'>
+              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg'>
+                <div className='text-xl text-[#fff] font-normal tracking-[0.1rem]'>Buy</div>
               </div>
             </div>
           </div>
