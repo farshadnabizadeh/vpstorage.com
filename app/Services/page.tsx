@@ -5,15 +5,7 @@ import SuccesssSVG from '@/assets/svg/success.svg'
 import Slider from '../Components/Slider'
 import useWindowDimensions from '@/Hooks/useWindowDimensions'
 const Page: FC = () => {
-  const { height, width } = useWindowDimensions();
-  const [template, setTemplate] = useState<any>();
-  // useEffect(() => {
-  //   if (width) {
-  //     if (width <= 1024) { setTemplate(<Mobile width={width} />) }
-  //     if (width > 1024) { setTemplate(<Desktop width={width} />) }
-  //   }
-  //   // if (width > 375 && width <= 1024) { setTemplate(<Desktop />) }
-  // }, [width])
+  const { width } = useWindowDimensions();
   return (
     <div className='w-full min-h-screen bg-white flex justify-center'>
       <div className='container h-full'>
