@@ -65,7 +65,7 @@ const Page: FC = () => {
               </div>
             </div>
             <div className='w-full'>
-              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg'>
+              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg hover:bg-[#1A5276] hover:cursor-pointer'>
                 <div className='text-lg text-[#fff]'>Buy</div>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Page: FC = () => {
               </div>
             </div>
             <div className='w-full'>
-              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg'>
+              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg hover:bg-[#1A5276] hover:cursor-pointer'>
                 <div className='text-lg text-[#fff]'>Buy</div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const Page: FC = () => {
               </div>
             </div>
             <div className='w-full'>
-              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg'>
+              <div className='w-full h-14 flex items-center justify-center bg-[#212F3C] rounded-b-lg hover:bg-[#1A5276] hover:cursor-pointer'>
                 <div className='text-lg text-[#fff]'>Buy</div>
               </div>
             </div>
