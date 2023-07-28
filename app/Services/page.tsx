@@ -20,10 +20,10 @@ const Page: FC = () => {
         <div className='w-full flex justify-center mt-[70px]'>
           <Slider width={width} />
         </div>
-        <div className='w-full h-full grid grid-cols-3 gap-10 px-[110px]'>
+        <div className='w-full h-full grid lg:grid-cols-2 xl:grid-cols-3 gap-10 px-[30px] sm:px-[50px] lg:px-[110px]'>
 
 
-          <div className='my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
+          <div className='mb-6 sm:my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.1rem]'>
               Plan A
             </div>
@@ -72,7 +72,7 @@ const Page: FC = () => {
           </div>
 
 
-          <div className='my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
+          <div className='mb-6 sm:my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.1rem]'>
               Plan B
             </div>
@@ -121,7 +121,7 @@ const Page: FC = () => {
           </div>
 
 
-          <div className='my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
+          <div className='mb-6 sm:my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.1rem]'>
               Plan C
             </div>
