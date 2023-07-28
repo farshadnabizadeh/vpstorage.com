@@ -8,7 +8,7 @@ const Page: FC = () => {
   const { width } = useWindowDimensions();
   return (
     <div className='w-full min-h-screen bg-white flex justify-center'>
-      <div className='container h-full'>
+      <div className='w-full h-full lg:container'>
         <div className='w-full flex justify-center mt-[50px] lg:mt-[70px]'>
           <Slider width={width} />
         </div>
