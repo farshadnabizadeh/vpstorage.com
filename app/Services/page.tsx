@@ -21,8 +21,6 @@ const Page: FC = () => {
           <Slider width={width} />
         </div>
         <div className='w-full h-full grid lg:grid-cols-2 xl:grid-cols-3 gap-10 px-[30px] sm:px-[50px] lg:px-[110px]'>
-
-
           <div className='mb-6 sm:my-10 rounded-lg border-[1px] border-[#555] bg-[#212F3C]'>
             <div className='rounded-t-lg w-full h-14 bg-[#212F3C] text-base text-[#fff] flex justify-center items-center tracking-[0.1rem]'>
               Plan A
